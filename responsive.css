@@ -1,0 +1,120 @@
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .shop-section .bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-items .navbar-nav {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+  }
+
+  .navbar-items .navbar-nav-mobile {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin: 20px; */
+    background: var(--primary);
+    height: 100vh;
+    width: 60%;
+    padding-top: 40px;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .transform-x-100 {
+    transform: translateX(-100%);
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+  .new-collection {
+    flex-direction: column;
+  }
+
+  .shop-section .bottom {
+    flex-direction: column;
+  }
+  .experience {
+    flex-direction: column-reverse;
+  }
+  .experience .left {
+    margin-top: 20px;
+  }
+  .experience .left > img {
+    position: absolute;
+    top: 9px;
+    left: 7%;
+    width: 100%;
+  }
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner .left {
+    margin: 0;
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 300px);
+  }
+
+  .image-gallery .image-container:nth-child(2) {
+    grid-row: auto;
+  }
+
+  .new-product {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+
+  .new-product img {
+    width: 100%;
+  }
+
+  .new-product .left .strips .angle1 {
+    left: calc(0px + 6%);
+  }
+  .new-product .left .strips .angle2 {
+    left: calc(80px + 6%);
+  }
+  .new-product .left .strips .angle3 {
+    left: calc(160px + 6%);
+  }
+  .new-product .left .strips .angle4 {
+    left: calc(240px + 6%);
+  }
+
+  .projects .top-section {
+    flex-direction: column;
+  }
+  .project-card {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .hero-image img {
+    width: 329px;
+    height: 379px;
+  }
+  .project-card .project-image img {
+    width: 300px;
+    height: 100px;
+  }
+}
